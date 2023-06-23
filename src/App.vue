@@ -7,6 +7,7 @@
   <ConditionalRendering />
   <CounterApp />
   <IncrementArray />
+  <UsingRefs />
 </template>
 
 <script>
@@ -15,6 +16,7 @@ import CardItem from './components/CardItem.vue'
 import ConditionalRendering from './components/ConditionalRendering.vue'
 import CounterApp from './components/CounterApp.vue'
 import IncrementArray from './components/IncrementArray.vue'
+import UsingRefs from './components/UsingRefs.vue'
 
 export default {
   name: 'App',
@@ -23,7 +25,8 @@ export default {
     CardItem,
     ConditionalRendering,
     CounterApp,
-    IncrementArray
+    IncrementArray,
+    UsingRefs
   },
   data() {
     return {
