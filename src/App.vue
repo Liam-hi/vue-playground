@@ -6,6 +6,7 @@
   <CardItem v-else :text="'Second Card'"/>
   <ConditionalRendering />
   <CounterApp />
+  <IncrementArray />
 </template>
 
 <script>
@@ -13,6 +14,7 @@ import ChangeTitle from './components/ChangeTitle.vue'
 import CardItem from './components/CardItem.vue'
 import ConditionalRendering from './components/ConditionalRendering.vue'
 import CounterApp from './components/CounterApp.vue'
+import IncrementArray from './components/IncrementArray.vue'
 
 export default {
   name: 'App',
@@ -20,7 +22,8 @@ export default {
     ChangeTitle,
     CardItem,
     ConditionalRendering,
-    CounterApp
+    CounterApp,
+    IncrementArray
   },
   data() {
     return {
