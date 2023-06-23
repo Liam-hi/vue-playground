@@ -8,6 +8,7 @@
   <CounterApp />
   <IncrementArray />
   <UsingRefs />
+  <ArrayProps :items="myArray" />
 </template>
 
 <script>
@@ -17,6 +18,7 @@ import ConditionalRendering from './components/ConditionalRendering.vue'
 import CounterApp from './components/CounterApp.vue'
 import IncrementArray from './components/IncrementArray.vue'
 import UsingRefs from './components/UsingRefs.vue'
+import ArrayProps from './components/ArrayProps.vue'
 
 export default {
   name: 'App',
@@ -26,12 +28,18 @@ export default {
     ConditionalRendering,
     CounterApp,
     IncrementArray,
-    UsingRefs
+    UsingRefs,
+    ArrayProps
   },
   data() {
     return {
       componentTitle: "Component Title",
       toggle: true,
+      myArray: [
+        { id: 1, name: 'Item 1' },
+        { id: 2, name: 'Item 2' },
+        { id: 3, name: 'Item 3' },
+      ],
     }
   },
   methods: {
