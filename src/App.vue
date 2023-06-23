@@ -9,6 +9,7 @@
   <IncrementArray />
   <UsingRefs />
   <ArrayProps :items="myArray" />
+  <AnimateHeader />
 </template>
 
 <script>
@@ -19,6 +20,7 @@ import CounterApp from './components/CounterApp.vue'
 import IncrementArray from './components/IncrementArray.vue'
 import UsingRefs from './components/UsingRefs.vue'
 import ArrayProps from './components/ArrayProps.vue'
+import AnimateHeader from './components/AnimateHeader.vue'
 
 export default {
   name: 'App',
@@ -29,7 +31,8 @@ export default {
     CounterApp,
     IncrementArray,
     UsingRefs,
-    ArrayProps
+    ArrayProps,
+    AnimateHeader
   },
   data() {
     return {
