@@ -13,9 +13,16 @@ export default {
         handleAnimate() {
             const element = this.$refs.animateHeader;
 
-            gsap.to(element, {
+            const tl = gsap.timeline();
+
+            tl.to(element, {
                 rotate: 20,
                 color: "red",
+                duration: 2
+            })
+            tl.to(element, {
+                rotate: 0,
+                color: "blue",
                 duration: 2
             })
         }

@@ -10,6 +10,8 @@
   <UsingRefs />
   <ArrayProps :items="myArray" />
   <AnimateHeader />
+  <ScrollTriggerAnimation />
+  <AnimateToggle />
 </template>
 
 <script>
@@ -21,6 +23,8 @@ import IncrementArray from './components/IncrementArray.vue'
 import UsingRefs from './components/UsingRefs.vue'
 import ArrayProps from './components/ArrayProps.vue'
 import AnimateHeader from './components/AnimateHeader.vue'
+import ScrollTriggerAnimation from './components/ScrollTriggerAnimation.vue'
+import AnimateToggle from './components/AnimateToggle.vue'
 
 export default {
   name: 'App',
@@ -32,7 +36,9 @@ export default {
     IncrementArray,
     UsingRefs,
     ArrayProps,
-    AnimateHeader
+    AnimateHeader,
+    ScrollTriggerAnimation,
+    AnimateToggle
   },
   data() {
     return {
