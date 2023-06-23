@@ -1,15 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>My First Vue app</h1>
+  <ChangeTitle :text="'Welcome to my first webpage!'"/>
+  <button @click="handleToggle">Toggle</button>
+  <CardItem v-if="toggle" :text="'First Card'"/>
+  <CardItem v-else :text="'Second Card'"/>
+  <ConditionalRendering />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ChangeTitle from './components/ChangeTitle.vue'
+import CardItem from './components/CardItem.vue'
+import ConditionalRendering from './components/ConditionalRendering.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ChangeTitle,
+    CardItem,
+    ConditionalRendering
+  },
+  data() {
+    return {
+      componentTitle: "Component Title",
+      toggle: true,
+    }
+  },
+  methods: {
+    handleToggle() {
+      this.toggle = !this.toggle
+    }
   }
 }
 </script>
