@@ -5,19 +5,22 @@
   <CardItem v-if="toggle" :text="'First Card'"/>
   <CardItem v-else :text="'Second Card'"/>
   <ConditionalRendering />
+  <CounterApp />
 </template>
 
 <script>
 import ChangeTitle from './components/ChangeTitle.vue'
 import CardItem from './components/CardItem.vue'
 import ConditionalRendering from './components/ConditionalRendering.vue'
+import CounterApp from './components/CounterApp.vue'
 
 export default {
   name: 'App',
   components: {
     ChangeTitle,
     CardItem,
-    ConditionalRendering
+    ConditionalRendering,
+    CounterApp
   },
   data() {
     return {
