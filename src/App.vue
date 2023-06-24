@@ -12,6 +12,7 @@
   <AnimateHeader />
   <ScrollTriggerAnimation />
   <AnimateToggle />
+  <ScriptSetup />
 </template>
 
 <script>
@@ -25,6 +26,7 @@ import ArrayProps from './components/ArrayProps.vue'
 import AnimateHeader from './components/AnimateHeader.vue'
 import ScrollTriggerAnimation from './components/ScrollTriggerAnimation.vue'
 import AnimateToggle from './components/AnimateToggle.vue'
+import ScriptSetup from './components/ScriptSetup.vue'
 
 export default {
   name: 'App',
@@ -38,7 +40,8 @@ export default {
     ArrayProps,
     AnimateHeader,
     ScrollTriggerAnimation,
-    AnimateToggle
+    AnimateToggle,
+    ScriptSetup
   },
   data() {
     return {
