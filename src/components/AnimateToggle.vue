@@ -33,11 +33,6 @@ export default {
         }
 
         this.$refs.clickEvent.addEventListener("click", menu);
-
-        
-
-
- 
     }
 }
 </script>

@@ -13,6 +13,7 @@
   <ScrollTriggerAnimation />
   <AnimateToggle />
   <ScriptSetup />
+  <ScriptSetupGSAP />
 </template>
 
 <script>
@@ -27,6 +28,7 @@ import AnimateHeader from './components/AnimateHeader.vue'
 import ScrollTriggerAnimation from './components/ScrollTriggerAnimation.vue'
 import AnimateToggle from './components/AnimateToggle.vue'
 import ScriptSetup from './components/ScriptSetup.vue'
+import ScriptSetupGSAP from './components/ScriptSetupGSAP.vue' 
 
 export default {
   name: 'App',
@@ -41,7 +43,8 @@ export default {
     AnimateHeader,
     ScrollTriggerAnimation,
     AnimateToggle,
-    ScriptSetup
+    ScriptSetup,
+    ScriptSetupGSAP
   },
   data() {
     return {
